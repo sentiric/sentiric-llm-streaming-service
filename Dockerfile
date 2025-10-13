@@ -12,7 +12,8 @@ ARG SERVICE_VERSION="0.0.0"
 WORKDIR /app
 
 # Proje dosyalarını kopyala
-COPY pyproject.toml poetry.lock ./
+# poetry.lock kaldırıldı
+COPY pyproject.toml ./
 COPY app ./app
 COPY README.md .
 
